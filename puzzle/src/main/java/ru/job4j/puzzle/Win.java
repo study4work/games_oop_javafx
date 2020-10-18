@@ -6,8 +6,9 @@ public class Win {
         for (int i = 0; i < board.length; i++) {
             if (board[i][i] == 1) {
                 for (int j = 0; j < board.length; j++) {
-                    if (board[i][j] != 1 && board[j][i] != 1) {
-                        rsl = false;
+                    if (board[i][j] != 1) {
+                        if (board[j][i] != 1)
+                            rsl = false;
                     }
                 }
             }
@@ -15,4 +16,5 @@ public class Win {
         return rsl;
     }
 }
+
 
