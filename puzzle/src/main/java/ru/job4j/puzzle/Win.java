@@ -28,6 +28,7 @@ public class Win {
         for (int i = 0; i < board.length; i++) {
             if (board[i][i] == 1) {
                 rsl = verticalCheck(board, i) || horizontalCheck(board, i);
+                break;
             }
         }
 
