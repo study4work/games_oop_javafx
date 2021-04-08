@@ -11,7 +11,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertThat;
 
-public class BishopBlackTest extends TestCase {
+public class BishopBlackTest {
 
     @Test
     public void testPosition() {
